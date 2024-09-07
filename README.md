@@ -1,5 +1,5 @@
 # Asteroids 
-
+Asteroids made in Python using PyGame
 
 
 ## Setup Steps
