@@ -11,6 +11,10 @@ def main():
 
     # infinite loop for now for the game
     while running:
+        # loop to poll and quit
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                return
         # fill the screen with a color to wipe away previous frame
         screen.fill("black")
         
