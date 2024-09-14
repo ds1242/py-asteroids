@@ -15,7 +15,7 @@ def main():
     Player.containers = (updatable, drawable)
 
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
-    
+
     dt = 0
 
     # infinite loop for now for the game
@@ -26,15 +26,15 @@ def main():
                 running = False
                 
                 
-        for thing in updatable:
-            thing.update(dt)
+        for obj in updatable:
+            obj.update(dt)
 
         # fill the screen with a color to wipe away previous frame
         screen.fill("black")
         
         
-        for item in drawable:
-            item.draw(screen)
+        for obj in drawable:
+            obj.draw(screen)
         pygame.display.flip()
         
 
