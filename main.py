@@ -5,15 +5,17 @@ from player import Player
 def main():
     pygame.init()
     print("Starting asteroids!")
-
-
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     clock = pygame.time.Clock()
     running = True
+
     updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
+
     Player.containers = (updatable, drawable)
+
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
+    
     dt = 0
 
     # infinite loop for now for the game
