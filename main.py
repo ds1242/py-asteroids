@@ -22,6 +22,7 @@ def main():
         # fill the screen with a color to wipe away previous frame
         screen.fill("black")
         player.draw(screen)
+        player.update(dt)
         pygame.display.flip()
         
 
