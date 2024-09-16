@@ -35,7 +35,11 @@ def main():
                 
         for obj in updatable:
             obj.update(dt)
-        # asteroid.update(2, dt)
+
+        for obj in asteroids:
+            if player.collision_check(obj) == True:
+                print("Game Over!!")
+                running = False
         # fill the screen with a color to wipe away previous frame
         screen.fill("black")
         
