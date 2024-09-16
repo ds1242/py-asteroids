@@ -1,6 +1,7 @@
 import pygame
 from constants import *
-from player import Player
+from player import *
+from asteroids import *
 
 def main():
     pygame.init()
@@ -31,7 +32,6 @@ def main():
 
         # fill the screen with a color to wipe away previous frame
         screen.fill("black")
-        
         
         for obj in drawable:
             obj.draw(screen)
