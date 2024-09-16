@@ -1,7 +1,7 @@
 import pygame
 from constants import *
-from player import *
-from asteroids import *
+from player import Player
+from asteroid import Asteroid
 
 def main():
     pygame.init()
