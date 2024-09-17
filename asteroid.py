@@ -20,8 +20,8 @@ class Asteroid(CircleShape):
         
         # generate a uniform random angle
         random_angle = random.uniform(20, 50)
-        a = self.velocity.rotate(split_angle)
-        b = self.velocity.rotate(-split_angle)
+        a = self.velocity.rotate(random_angle)
+        b = self.velocity.rotate(-random_angle)
 
         # new radius for the smaller asteroids
         new_radius = self.radius - ASTEROID_MIN_RADIUS
